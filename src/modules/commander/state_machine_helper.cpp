@@ -219,7 +219,7 @@ transition_result_t arming_state_transition(vehicle_status_s *status, const safe
 
 		if (hil_enabled) {
 			/* enforce lockdown in HIL */
-			armed->lockdown = true;
+			// armed->lockdown = true;
 			status_flags->condition_system_sensors_initialized = true;
 
 			/* recover from a prearm fail */
